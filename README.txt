@@ -1,11 +1,13 @@
-Project I For One — Website Package (v9)
+Project I For One — Website Package (v13)
 
-Changes from v8
-- Logo is larger for readability
-- Newsletter is now its own dedicated section (partial) inserted above the footer on every page
-- Footer is tightened and cleaner (no newsletter inside)
-- Clean URLs: internal links do NOT use .html
-- /images contains ONLY image files and there is only one /images folder
+Fixes
+- Main site background remains black (#070A12)
+- Header background matches the logo background (sampled): #121223
+- Content restored across all pages (v9 content)
+- Footer redesigned to be clean, professional, and responsive
+- Newsletter stays as its own dedicated section
+- Clean URLs (no .html in internal links)
+- /images contains only image files and is not nested
 
 Stripe
 - Replace the Stripe Payment Link in donate.html:
