@@ -1,17 +1,10 @@
-Project I For One — Website Package (v2)
+Project I For One — Website Package (v8)
 
-How it works
-- Each page is plain HTML.
-- Header and footer are stored in /partials/header.html and /partials/footer.html.
-- /assets/site.js injects those partials at runtime using fetch().
-- All images remain under /images/.
+Notes
+- Clean URLs: internal links do NOT use .html
+- Header/footer are in /partials and injected by /assets/site.js
+- /images contains ONLY image assets (no nesting, no non-image files)
 
-Deploy to Cloudflare Pages
-- Set your Pages build to "no build" / "static" and point to this root folder.
-- Ensure /partials is publicly accessible (it is in this package).
-
-To update nav/footer
-- Edit /partials/header.html and /partials/footer.html. All pages inherit automatically.
-
-Donate link
-- Update the Donate button URL in donate.html (currently "Donate (link)").
+Stripe
+- Update the Stripe Payment Link in donate.html:
+  https://buy.stripe.com/YOUR_STRIPE_LINK_HERE
