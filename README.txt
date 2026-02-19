@@ -17,3 +17,7 @@ Stripe
 
 v16
 - Fixed Awareness 'Our stance' section layout (no broken line breaks, stronger emphasis line)
+
+
+v17
+- Fixed Awareness service cards: consistent padding, aligned actions/footer, reduced awkward spacing

@@ -221,3 +221,49 @@ hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 @media (max-width: 980px){
   .stance-emphasis{font-size: 20px}
 }
+
+
+/* Awareness: service cards alignment + polish */
+.service-card{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  padding:0;               /* we'll control padding per section */
+  overflow:hidden;
+}
+.service-card-body{
+  padding:18px;
+}
+.service-card h3{
+  margin:0 0 10px;
+  font-size:18px;
+}
+.service-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+}
+.service-card .list{
+  margin-top:14px;
+}
+.service-card-actions{
+  margin-top:auto;
+  padding:14px 18px 18px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+/* Even when empty, keep height rhythm consistent without showing a bar */
+.service-card-actions[aria-hidden="true"]{
+  padding:14px 18px 18px;
+  min-height:60px;
+}
+/* Button sizing inside cards */
+.service-card-actions .btn{
+  padding:10px 14px;
+  border-radius:14px;
+}
+
+@media (min-width: 981px){
+  .service-card{min-height: 320px;}
+}
