@@ -13,3 +13,7 @@ Changes
 Stripe
 - Replace the Stripe Payment Link in donate.html:
   https://buy.stripe.com/YOUR_STRIPE_LINK_HERE
+
+
+v16
+- Fixed Awareness 'Our stance' section layout (no broken line breaks, stronger emphasis line)

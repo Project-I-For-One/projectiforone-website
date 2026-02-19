@@ -198,3 +198,26 @@ hr{border:0;border-top:1px solid var(--line);margin:28px 0}
   .footer-contact-row{flex-direction:column;align-items:stretch}
   .contact-link{justify-content:center}
 }
+
+
+/* Awareness: stance callout emphasis */
+.stance-callout .muted{
+  margin-top: 6px;
+  max-width: 85ch;
+}
+.stance-emphasis{
+  margin-top: 12px;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 950;
+  letter-spacing: -.01em;
+  color: var(--text);
+}
+.stance-dot{
+  opacity: .9;
+  display: inline-block;
+  margin: 0 6px;
+}
+@media (max-width: 980px){
+  .stance-emphasis{font-size: 20px}
+}
