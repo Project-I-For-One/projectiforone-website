@@ -1,208 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Project I For One — our story, mission, and the team building a housing-first solution in Los Angeles." />
-  <title>About — Project I For One</title>
-  <link rel="icon" href="/images/favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/images/logo-icon.png" />
-  <meta property="og:title" content="About — Project I For One" />
-  <meta property="og:description" content="About Project I For One — our story, mission, and the team building a housing-first solution in Los Angeles." />
-  <meta property="og:image" content="https://projectiforone.org/images/og-image.png" />
-  <meta property="og:url" content="https://projectiforone.org/about" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <style>
-    .founder-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(160,100,255,0.2);
-      border-radius: 20px;
-      padding: 2.5rem;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 2rem;
-      align-items: start;
-    }
-
-    .founder-avatar {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: var(--gradient);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      flex-shrink: 0;
-    }
-
-    .founder-name {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 0.2rem;
-    }
-
-    .founder-title {
-      font-size: 0.85rem;
-      color: var(--purple-accent);
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-
-    .value-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(160,100,255,0.15);
-      border-left: 4px solid var(--purple-accent);
-      border-radius: 12px;
-      padding: 1.5rem 1.5rem 1.5rem 1.8rem;
-    }
-
-    .mission-statement {
-      background: var(--gradient);
-      border-radius: 20px;
-      padding: 3rem;
-      text-align: center;
-      margin: 3rem 0;
-    }
-
-    .mission-statement h2 {
-      font-size: clamp(1.4rem, 3vw, 2.2rem);
-      margin-bottom: 1rem;
-    }
-
-    .mission-statement p {
-      color: rgba(255,255,255,0.85);
-      font-size: 1.05rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    @media (max-width: 640px) {
-      .founder-card { grid-template-columns: 1fr; }
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Project I For One</title>
+  <meta name="description" content="Learn what Project I For One is building.">
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
-
-<div id="header-placeholder"></div>
-
+  <div data-include="header"></div>
+  
 <main>
-
-  <section class="page-hero">
-    <div class="container">
-      <div class="section-label">Our Story</div>
-      <h1>Built to solve the problem. <span>Not manage it.</span></h1>
-      <p style="max-width:620px; margin-top:1rem; font-size:1.1rem;">Project I For One was founded in Los Angeles with one purpose: to create a world where homelessness is rare, brief, and non-recurring — starting with one person at a time.</p>
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker"><span class="dot"></span> About</div>
+      <h1 class="h1">Startup mode. Outcome mode.</h1>
+      <p class="lede">
+        Project I For One is a housing-first nonprofit built from the ground up to deliver rapid, dignified, permanent exits from homelessness — and to prove the model can scale.
+      </p>
     </div>
   </section>
 
-  <!-- MISSION STATEMENT -->
-  <section>
-    <div class="container">
-      <div class="mission-statement">
-        <h2>"Zero returns to homelessness — that's our only metric."</h2>
-        <p>We don't measure success by beds filled or services provided. We measure it by people who have a permanent home and never return to the street.</p>
+  <section class="section">
+    <div class="wrap two-col">
+      <div class="card">
+        <h3>What we’re building</h3>
+        <ul class="list">
+          <li>Rapid rehousing paired with intensive, personalized support</li>
+          <li>Seed funding through grants, philanthropy, and grassroots giving</li>
+          <li>Board, clinical, and street-outreach recruitment</li>
+          <li>Data-driven pilots in high-need urban corridors</li>
+          <li>Policy briefs and coalition partnerships to scale what works</li>
+        </ul>
       </div>
-
-      <!-- OUR STORY -->
-      <div class="grid-2" style="align-items:center; gap:4rem; margin-top:2rem;">
-        <div>
-          <div class="section-label">Our Origin</div>
-          <h2 class="section-title">Why We Exist</h2>
-          <div class="accent-line"></div>
-          <p>Los Angeles has one of the most severe homelessness crises in the nation. Despite billions spent, the problem persists — not because solutions don't exist, but because the system is broken by bureaucracy, temporary fixes, and a lack of accountability to real outcomes.</p>
-          <br/>
-          <p>Project I For One was founded to cut through that. We operate lean, move fast, and stay laser-focused on what actually works: housing people immediately, then wrapping them with the support they need to stay housed permanently.</p>
-          <br/>
-          <p>We're building from the ground up — recruiting the right board, clinical partners, and street-outreach team — because doing this right matters more than doing it fast.</p>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:1rem;">
-          <div class="value-card">
-            <h3>Housing is a Human Right</h3>
-            <p>Not a reward for sobriety, employment, or "program compliance." A right.</p>
-          </div>
-          <div class="value-card">
-            <h3>Dignity Before Everything</h3>
-            <p>Every person we serve is treated with full dignity and respect — no exceptions.</p>
-          </div>
-          <div class="value-card">
-            <h3>Results Over Reports</h3>
-            <p>We are accountable to outcomes, not paperwork. If it doesn't house people permanently, we change it.</p>
-          </div>
-          <div class="value-card">
-            <h3>Built to Scale</h3>
-            <p>Our pilot model is designed to prove itself in LA — then expand to cities across the country.</p>
-          </div>
+      <div>
+        <h2 class="section-title">Our non-negotiable</h2>
+        <p class="section-lede">
+          The standard is not “placement.” The standard is permanence.
+          The goal is not “services.” The goal is a stable life.
+        </p>
+        <div class="callout">
+          <strong>Metric that matters</strong>
+          <div class="muted">Zero returns to homelessness.</div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- FOUNDER -->
-  <section style="background: rgba(0,0,0,0.2); border-top:1px solid rgba(160,100,255,0.1); border-bottom:1px solid rgba(160,100,255,0.1);">
-    <div class="container">
-      <div class="section-label">Leadership</div>
-      <h2 class="section-title" style="margin-bottom:2rem;">Who's Building This</h2>
-      <div class="founder-card">
-        <div class="founder-avatar">👤</div>
-        <div>
-          <div class="founder-name">Darrell</div>
-          <div class="founder-title">Chief Executive Officer & Founder</div>
-          <p>Building Project I For One from the ground up since October 2022. Darrell wears every hat: designing the core model, bootstrapping seed funding, recruiting board members and clinical partners, mapping data-driven pilots in high-need urban corridors, and crafting policy briefs and coalition partnerships.</p>
-          <br/>
-          <p>Based in Los Angeles, California.</p>
-        </div>
-      </div>
-      <p style="margin-top:2rem; font-size:0.9rem; text-align:center;">We are actively recruiting board members, clinical partners, and street-outreach team members. <a href="/get-involved">Learn how to join us →</a></p>
-    </div>
-  </section>
-
-  <!-- WHAT WE'RE BUILDING -->
-  <section>
-    <div class="container">
-      <div class="section-label">Right Now</div>
-      <h2 class="section-title">What We're Building</h2>
-      <div class="accent-line"></div>
-      <div class="grid-3" style="margin-top:1rem;">
-        <div class="card">
-          <div class="card-icon">🏗️</div>
-          <h3>Core Model</h3>
-          <p>Designing and refining our rapid rehousing + intensive support program to ensure permanence.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">💰</div>
-          <h3>Seed Funding</h3>
-          <p>Bootstrapping through grants, angel philanthropists, and grassroots campaigns to fund our pilots.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🤝</div>
-          <h3>The Right Team</h3>
-          <p>Recruiting our first board, clinical partners, and street-outreach team who share our obsession with outcomes.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📍</div>
-          <h3>Pilot Mapping</h3>
-          <p>Identifying high-need urban corridors in LA where our data-driven pilots will launch first.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📋</div>
-          <h3>Policy Work</h3>
-          <p>Crafting policy briefs and building coalition partnerships to demonstrate — and then scale — what works.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">⚖️</div>
-          <h3>IRS Status</h3>
-          <p>Pursuing official 501(c)(3) non-profit status to unlock full philanthropic and grant funding.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>
 
-<div id="footer-placeholder"></div>
-<script src="/js/components.js"></script>
+  <div data-include="footer"></div>
 </body>
 </html>
