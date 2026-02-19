@@ -12,5 +12,6 @@ async function injectPartial(selector, url) {
 
 document.addEventListener("DOMContentLoaded", () => {
   injectPartial("[data-include='header']", "/partials/header.html");
+  injectPartial("[data-include='newsletter']", "/partials/newsletter.html");
   injectPartial("[data-include='footer']", "/partials/footer.html");
 });
