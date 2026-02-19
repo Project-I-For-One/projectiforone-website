@@ -21,3 +21,6 @@ v16
 
 v17
 - Fixed Awareness service cards: consistent padding, aligned actions/footer, reduced awkward spacing
+
+v18
+- Tightened Awareness card layout: added outer padding + increased internal spacing

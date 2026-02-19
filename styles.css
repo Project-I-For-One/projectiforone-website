@@ -267,3 +267,21 @@ hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 @media (min-width: 981px){
   .service-card{min-height: 320px;}
 }
+
+
+/* Awareness card spacing fix */
+.section .grid.grid-2{
+  margin-top: 28px;
+  gap: 28px;              /* more breathing room between cards */
+}
+
+.section .grid.grid-2 .card{
+  padding: 22px;          /* internal padding so content isn't edge-to-edge */
+}
+
+@media (min-width: 981px){
+  .section .grid.grid-2{
+    padding-left: 20px;   /* pull cards away from page edges */
+    padding-right: 20px;
+  }
+}
