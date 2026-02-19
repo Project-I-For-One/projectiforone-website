@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Project I For One — reach out to volunteer, partner, donate, or learn more about our mission." />
+  <title>Contact — Project I For One</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/logo-icon.png" />
+  <meta property="og:title" content="Contact — Project I For One" />
+  <meta property="og:description" content="A housing-first non-profit delivering rapid, dignified, and permanent exits from homelessness in Los Angeles." />
+  <meta property="og:image" content="https://projectiforone.org/images/og-image.png" />
+  <meta property="og:url" content="https://projectiforone.org/contact" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-info-icon {
+      width: 46px;
+      height: 46px;
+      background: rgba(160,100,255,0.15);
+      border: 1px solid rgba(160,100,255,0.25);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .contact-info-item h4 {
+      font-size: 0.85rem;
+      color: var(--purple-accent);
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-info-item p,
+    .contact-info-item a {
+      font-size: 0.95rem;
+      color: var(--text-body);
+    }
+
+    .contact-form-box {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(160,100,255,0.2);
+      border-radius: 20px;
+      padding: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">🏠</div>
+      <div class="nav-logo-text">
+        <span class="project">PROJECT</span>
+        <span class="name">I FOR ONE</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/our-model">Our Model</a></li>
+      <li><a href="/get-involved">Get Involved</a></li>
+      <li><a href="/contact" class="active">Contact</a></li>
+      <li><a href="/donate" class="btn-donate">Donate</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h1>Let's talk about <span>what's possible.</span></h1>
+      <p style="max-width:560px; margin-top:1rem; font-size:1.1rem;">Whether you want to volunteer, join our team, partner with us, or just learn more — we'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: Contact Info -->
+        <div>
+          <div class="section-label">Reach Us</div>
+          <h2 class="section-title" style="margin-bottom:2rem;">We're <span>here.</span></h2>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@projectiforone.org">info@projectiforone.org</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Los Angeles, California</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🌐</div>
+            <div>
+              <h4>Website</h4>
+              <a href="https://projectiforone.org">projectiforone.org</a>
+            </div>
+          </div>
+
+          <div class="divider" style="margin:2rem 0;"></div>
+
+          <h3 style="margin-bottom:1rem;">What to reach out about:</h3>
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <div class="card" style="padding:1rem 1.25rem;">
+              <strong style="font-size:0.9rem;">🏃 Volunteer opportunities</strong>
+            </div>
+            <div class="card" style="padding:1rem 1.25rem;">
+              <strong style="font-size:0.9rem;">🤝 Board membership interest</strong>
+            </div>
+            <div class="card" style="padding:1rem 1.25rem;">
+              <strong style="font-size:0.9rem;">🏢 Partnership & sponsorship</strong>
+            </div>
+            <div class="card" style="padding:1rem 1.25rem;">
+              <strong style="font-size:0.9rem;">💰 Major gifts & grants</strong>
+            </div>
+            <div class="card" style="padding:1rem 1.25rem;">
+              <strong style="font-size:0.9rem;">📋 Clinical & outreach roles</strong>
+            </div>
+            <div class="card" style="padding:1rem 1.25rem;">
+              <strong style="font-size:0.9rem;">📰 Media & press inquiries</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <div class="contact-form-box">
+          <h2 style="margin-bottom:0.5rem;">Send Us a Message</h2>
+          <p style="margin-bottom:2rem; font-size:0.9rem;">We read every message and respond to every serious inquiry.</p>
+
+          <div class="grid-2" style="gap:1rem;">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" placeholder="First name" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" placeholder="Last name" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label>I'm reaching out about...</label>
+            <select>
+              <option value="">Select a topic</option>
+              <option>Volunteering</option>
+              <option>Board membership</option>
+              <option>Partnership or sponsorship</option>
+              <option>Clinical or outreach role</option>
+              <option>Major gift or grant</option>
+              <option>Media or press</option>
+              <option>General inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Organization (if applicable)</label>
+            <input type="text" placeholder="Your organization or company" />
+          </div>
+
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea placeholder="Tell us who you are and how you'd like to be involved..." style="min-height:160px;" required></textarea>
+          </div>
+
+          <button class="btn btn-primary" style="width:100%; font-size:1.05rem; padding:1rem;">
+            Send Message →
+          </button>
+
+          <p style="font-size:0.78rem; text-align:center; margin-top:1rem; color:var(--text-body);">
+            We typically respond within 2–3 business days.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="nav-logo">
+        <div class="nav-logo-icon">🏠</div>
+        <div class="nav-logo-text">
+          <span class="project">PROJECT</span>
+          <span class="name">I FOR ONE</span>
+        </div>
+      </a>
+      <p>A housing-first non-profit delivering rapid, dignified, and permanent exits from homelessness in Los Angeles. No red tape. No temporary fixes. Just results.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/our-model">Our Model</a></li>
+        <li><a href="/get-involved">Get Involved</a></li>
+        <li><a href="/donate">Donate</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@projectiforone.org">info@projectiforone.org</a></li>
+        <li><a href="/contact">Send a Message</a></li>
+        <li style="color:var(--text-body);font-size:0.9rem;font-weight:300;">Los Angeles, CA</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Project I For One. All rights reserved.</span>
+    <span class="irs-note">501(c)(3) Status Pending · EIN on file</span>
+  </div>
+</footer>
+
+</body>
+</html>

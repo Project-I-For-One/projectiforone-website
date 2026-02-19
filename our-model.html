@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our Model — how Project I For One delivers permanent exits from homelessness through rapid rehousing and intensive support." />
+  <title>Our Model — Project I For One</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/logo-icon.png" />
+  <meta property="og:title" content="Our Model — Project I For One" />
+  <meta property="og:description" content="A housing-first non-profit delivering rapid, dignified, and permanent exits from homelessness in Los Angeles." />
+  <meta property="og:image" content="https://projectiforone.org/images/og-image.png" />
+  <meta property="og:url" content="https://projectiforone.org/our-model" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    .model-phase {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 2rem;
+      align-items: start;
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(160,100,255,0.1);
+    }
+
+    .model-phase:last-child {
+      border-bottom: none;
+    }
+
+    .phase-num {
+      width: 64px;
+      height: 64px;
+      background: var(--gradient);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .phase-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .phase-tag {
+      display: inline-block;
+      background: rgba(160,100,255,0.15);
+      border: 1px solid rgba(160,100,255,0.3);
+      color: var(--purple-accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .phase-bullets {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .phase-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      color: var(--text-body);
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+
+    .phase-bullets li::before {
+      content: '→';
+      color: var(--purple-accent);
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 0.05rem;
+    }
+
+    /* IRS SECTION */
+    .irs-section {
+      background: rgba(100,30,160,0.08);
+      border: 1px solid rgba(160,100,255,0.2);
+      border-radius: 20px;
+      padding: 3rem;
+      margin: 3rem 0;
+    }
+
+    .irs-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(160,100,255,0.12);
+      border: 1px solid rgba(160,100,255,0.3);
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--purple-accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .program-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+
+    .program-table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--purple-accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(160,100,255,0.2);
+    }
+
+    .program-table td {
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-body);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      vertical-align: top;
+    }
+
+    .program-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .program-table td:first-child {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    @media (max-width: 640px) {
+      .model-phase { grid-template-columns: 1fr; }
+      .phase-num { width: 50px; height: 50px; font-size: 1.2rem; }
+      .irs-section { padding: 2rem 1.5rem; }
+      .program-table { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">🏠</div>
+      <div class="nav-logo-text">
+        <span class="project">PROJECT</span>
+        <span class="name">I FOR ONE</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/our-model" class="active">Our Model</a></li>
+      <li><a href="/get-involved">Get Involved</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/donate" class="btn-donate">Donate</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h1>A model built for <span>permanent results</span></h1>
+      <p style="max-width:620px; margin-top:1rem; font-size:1.1rem;">Our approach is simple: house people fast, support them deeply, and measure success by one metric — zero returns to homelessness.</p>
+    </div>
+  </section>
+
+  <!-- THE MODEL -->
+  <section>
+    <div class="container">
+      <div class="section-label">The Four Phases</div>
+      <h2 class="section-title" style="margin-bottom:3rem;">From Street to <span>Permanent Home</span></h2>
+
+      <div class="model-phase">
+        <div class="phase-num">1</div>
+        <div class="phase-content">
+          <div class="phase-tag">Phase One</div>
+          <h3>Street Outreach & Engagement</h3>
+          <p>We meet people where they are — physically and emotionally. Before anything else, we build trust. Our street-outreach team works in high-need urban corridors throughout Los Angeles to identify individuals experiencing homelessness and begin the relationship that makes everything else possible.</p>
+          <ul class="phase-bullets">
+            <li>Consistent presence in identified high-need corridors</li>
+            <li>Trauma-informed, non-judgmental engagement</li>
+            <li>Needs assessment — health, history, barriers to housing</li>
+            <li>Connection to immediate basic needs while trust builds</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="model-phase">
+        <div class="phase-num">2</div>
+        <div class="phase-content">
+          <div class="phase-tag">Phase Two</div>
+          <h3>Rapid Rehousing</h3>
+          <p>Speed matters. The longer someone remains unhoused, the harder it becomes to exit homelessness permanently. We cut through bureaucratic delays to place individuals into stable, permanent housing as quickly as possible — without prerequisites, waiting lists, or compliance requirements.</p>
+          <ul class="phase-bullets">
+            <li>No sobriety, employment, or program-compliance requirements</li>
+            <li>Direct placement into permanent housing units</li>
+            <li>Financial assistance for deposits and initial rent</li>
+            <li>Coordination with landlords and property partners</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="model-phase">
+        <div class="phase-num">3</div>
+        <div class="phase-content">
+          <div class="phase-tag">Phase Three</div>
+          <h3>Intensive Personalized Support</h3>
+          <p>Housing alone isn't enough. Once housed, each person receives intensive, individualized case management tailored to their specific needs. We work alongside clinical partners to address the full spectrum of challenges that led to — and could lead back to — homelessness.</p>
+          <ul class="phase-bullets">
+            <li>Dedicated case manager for every individual</li>
+            <li>Mental health and substance use support (not a prerequisite — a resource)</li>
+            <li>Employment readiness, benefits enrollment, and life skills</li>
+            <li>Healthcare connection and coordination</li>
+            <li>Community and social support building</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="model-phase">
+        <div class="phase-num">4</div>
+        <div class="phase-content">
+          <div class="phase-tag">Phase Four</div>
+          <h3>Long-Term Stability & Follow-Up</h3>
+          <p>Our responsibility doesn't end at move-in. We maintain an ongoing relationship with every individual we house, providing check-ins and responsive support for as long as it takes to ensure permanent stability. Zero returns to homelessness is not a goal — it's our standard.</p>
+          <ul class="phase-bullets">
+            <li>Regular scheduled check-ins for minimum 24 months</li>
+            <li>Rapid response to emerging crises before they escalate</li>
+            <li>Continued access to case management as needed</li>
+            <li>Outcome tracking and data collection for program improvement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IRS / MISSION & PROGRAMS SECTION -->
+  <section style="background: rgba(0,0,0,0.2); border-top:1px solid rgba(160,100,255,0.1); border-bottom:1px solid rgba(160,100,255,0.1);">
+    <div class="container">
+      <div class="irs-section">
+        <div class="irs-badge">⚖️ Mission & Programs — Public Record</div>
+        <h2 style="margin-bottom:1rem;">Our Charitable Purpose & Activities</h2>
+        <p style="margin-bottom:1.5rem;">Project I For One is organized and operated exclusively for charitable purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code. Our mission is to reduce and prevent homelessness in Los Angeles, California through direct services, community programs, and advocacy — with a specific focus on housing-first approaches and permanent rehousing outcomes.</p>
+
+        <table class="program-table">
+          <thead>
+            <tr>
+              <th>Program / Activity</th>
+              <th>Description</th>
+              <th>Population Served</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rapid Rehousing Program</td>
+              <td>Direct placement of homeless individuals into permanent housing, including financial assistance for deposits and rent, and landlord coordination.</td>
+              <td>Individuals and families experiencing homelessness in Los Angeles</td>
+            </tr>
+            <tr>
+              <td>Street Outreach & Engagement</td>
+              <td>Trauma-informed street outreach in high-need urban corridors to identify, engage, and connect unsheltered individuals to housing and services.</td>
+              <td>Unsheltered individuals in Los Angeles</td>
+            </tr>
+            <tr>
+              <td>Intensive Case Management</td>
+              <td>Personalized, ongoing case management addressing mental health, substance use support, employment, healthcare, and life skills — delivered post-housing.</td>
+              <td>Previously homeless individuals recently housed through our program</td>
+            </tr>
+            <tr>
+              <td>Long-Term Stability Follow-Up</td>
+              <td>Minimum 24-month follow-up support and crisis response to prevent returns to homelessness and support permanent stability.</td>
+              <td>All individuals housed through Project I For One</td>
+            </tr>
+            <tr>
+              <td>Pilot Research & Policy Advocacy</td>
+              <td>Data collection, outcome measurement, and policy brief development to document program effectiveness and advocate for housing-first policy at the local and state level.</td>
+              <td>Public benefit — homeless policy ecosystem in Los Angeles and California</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY HOUSING FIRST -->
+  <section>
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+        <div>
+          <div class="section-label">The Evidence</div>
+          <h2 class="section-title">Why <span>Housing-First</span> Works</h2>
+          <div class="accent-line"></div>
+          <p>Decades of research consistently show that providing stable housing first — before requiring sobriety, employment, or treatment compliance — leads to dramatically better outcomes for individuals experiencing chronic homelessness.</p>
+          <br/>
+          <p>Treating housing as a right rather than a reward removes the barriers that keep people on the street and creates the stable foundation from which every other area of life can improve.</p>
+          <br/>
+          <p>Project I For One is built entirely on this evidence base. We don't believe in reinventing the wheel — we believe in applying what works, rigorously, at scale.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:1.5rem;">
+          <div class="card">
+            <div class="stat-number" style="font-size:2rem;">80%+</div>
+            <div class="stat-label">Housing retention rates in evidence-based Housing-First programs</div>
+          </div>
+          <div class="card">
+            <div class="stat-number" style="font-size:2rem;">$0</div>
+            <div class="stat-label">Prerequisites for housing — no sobriety, no employment, no compliance required</div>
+          </div>
+          <div class="card">
+            <div class="stat-number" style="font-size:2rem;">24mo</div>
+            <div class="stat-label">Minimum follow-up period to ensure true long-term permanence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="nav-logo">
+        <div class="nav-logo-icon">🏠</div>
+        <div class="nav-logo-text">
+          <span class="project">PROJECT</span>
+          <span class="name">I FOR ONE</span>
+        </div>
+      </a>
+      <p>A housing-first non-profit delivering rapid, dignified, and permanent exits from homelessness in Los Angeles. No red tape. No temporary fixes. Just results.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/our-model">Our Model</a></li>
+        <li><a href="/get-involved">Get Involved</a></li>
+        <li><a href="/donate">Donate</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@projectiforone.org">info@projectiforone.org</a></li>
+        <li><a href="/contact">Send a Message</a></li>
+        <li style="color:var(--text-body);font-size:0.9rem;font-weight:300;">Los Angeles, CA</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Project I For One. All rights reserved.</span>
+    <span class="irs-note">501(c)(3) Status Pending · EIN on file</span>
+  </div>
+</footer>
+
+</body>
+</html>
